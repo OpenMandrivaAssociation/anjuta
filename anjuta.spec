@@ -20,6 +20,11 @@ URL:			https://anjuta.sourceforge.net/
 Source0:		http://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Source1:		anjuta.rpmlintrc
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	autogen
 BuildRequires:	itstool
 BuildRequires:	bison
