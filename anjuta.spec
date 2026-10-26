@@ -102,6 +102,9 @@ GObject Introspection interface description for %{name}.
 %prep
 %setup -q
 %autopatch -p1
+# Configure is not regenerated. The shipped script only treats webkit2gtk-4.0
+# as WebKit2, so the devhelp plugin includes the removed webkit1 header.
+sed -i 's/webkit2gtk-4.0/webkit2gtk-4.1/g' configure configure.ac
 
 %build
 %configure \
