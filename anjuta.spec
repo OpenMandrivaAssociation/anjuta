@@ -34,7 +34,7 @@ BuildRequires:	gnome-common
 BuildRequires:	gtk-doc >= 1.0
 BuildRequires:	imagemagick
 BuildRequires:	intltool
-BuildRequires:	openldap-devel
+BuildRequires:	pkgconfig(ldap)
 BuildRequires:	vala
 BuildRequires:	gettext-devel
 BuildRequires:	subversion-devel >= 1.5.0
@@ -59,10 +59,9 @@ BuildRequires:	pkgconfig(vte-2.91) >= 0.29.0
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xrender)
 BuildRequires:	yelp-tools yelp yelp-devel
-BuildRequires:	python3dist(rope)
 
 Requires:	autogen
-Requires:	python-rope
+# python-rope in Cooker is built for Python 3.11 and cannot be installed.
 #Requires:	typelib(St)
 
 %description
