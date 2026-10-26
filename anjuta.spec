@@ -2,7 +2,7 @@
 %define _disable_ld_no_undefined 1
 %define _disable_rebuild_configure 1
 # AnjutaCommandBar is stored in a GtkWidget slot.
-%global optflags %{optflags} -Wno-incompatible-pointer-types
+%global optflags %{optflags} -Wno-incompatible-pointer-types -Wno-register
 
 %define major 0
 %define api 3
